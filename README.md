@@ -11,7 +11,7 @@
  
 # Demo :
 
-![alt tag](https://github.com/rakibulalam/radarjs/blob/master/snapshot.jpg)
+![alt tag](https://github.com/rakibulalam/puzzle.js/blob/master/snapshot.jpg)
 
 http://cameopix.com/puzzle/
 # Documentation
