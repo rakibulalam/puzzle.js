@@ -2,8 +2,7 @@
 **Description:** Its very simple puzzle game plugin based on jQuery
 
  * jQuery Puzzle game Plugin
- * Examples and documentation at: http://cameopix.com/
- * Copyright (c) 2011 Md. Rakibulalam
+ * Copyright (c) 2011 http://cameopix.com/
  * Version: 1.0.11 (22-07-2011)
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php
@@ -12,7 +11,7 @@
  
 # Demo :
 
-![alt tag](https://github.com/rakibulalam/radarjs/blob/master/radarsnapshot.jpg)
+![alt tag](https://github.com/rakibulalam/radarjs/blob/master/snapshot.jpg)
 
 http://cameopix.com/puzzle/
 # Documentation
