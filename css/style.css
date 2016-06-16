@@ -1,0 +1,83 @@
+	body{ background:url(../images/bodybg.png) repeat-x; margin:0px; padding:0px; font-family:tahoma; text-align:left;}
+	#puzzle_bg{ background:url(../images/puzzlebg.png) no-repeat; height:438px; width:491px; margin:0px; padding:0px; position:relative;}
+	#puzzle_footer{ background:url(../images/footerbg.jpg) repeat-x; margin:0px; margin-top:50px; height:200px;}
+	UL{ margin:0px; padding:0px;}
+	.main-menu li
+		{
+			font-family:tahoma;
+			font-size:12px;
+			text-transform:uppercase;
+			font-weight:bold;
+			text-align:center;
+			color:#666666;
+			text-decoration:none;
+			display:block;
+			border:solid 1px #CCCCCC;
+			background:url(images/btn_bg.png) repeat-x;
+			line-height:100px;
+			height:100px;
+			vertical-align:middle;
+			width:150px;
+			margin:0px;
+			padding:0px;
+			cursor:pointer;
+		}
+	.main-menu a:hover
+		{
+			color: #96ce69;
+		}
+	.content-body{
+		background:url(../images/content_body.png) repeat-x;
+		height:300px;
+		margin:0px;
+		width:400px;
+		}
+		#contentLoader
+		{
+			width:850px;
+			height:300px;
+			background:#FFFFFF;
+			display:none;
+		}
+		#Html
+		{
+			color:#0000FF;
+		}
+	#Html H1
+		{
+			margin:0px;
+			padding:2px;
+			border-bottom:solid 1px #F0F0F0;
+			display:block;
+			font-size:13px;
+			width:100%;
+			font-weight:normal;
+		}
+	#css{
+		color:#FF33CC;
+		}
+	#css H1
+		{
+			margin:0px;
+			padding:2px;
+			border-bottom:solid 1px #F0F0F0;
+			display:block;
+			font-size:13px;
+			width:100%;
+			font-weight:normal;
+		}
+	#js
+	{
+		color:#CE3A00
+	}
+	#js  H1
+		{
+			margin:0px;
+			padding:2px;
+			border-bottom:solid 1px #F0F0F0;
+			display:block;
+			font-size:13px;
+			width:100%;
+			font-weight:normal;
+		}
+	LI{ padding-left:20px; margin-left:20px;}

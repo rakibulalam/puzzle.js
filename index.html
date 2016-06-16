@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>:.Puzzle Game.:</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="js/Jquery.js" type="text/javascript"></script>
+<script src="js/puzzle.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#puzzle').puzzle({
+			__rows:3,
+			__columns:3
+		});
+		
+		
+			var animateFlag=false;
+	var ids='';
+	$('.btn').click(function(){
+			$('#contentLoader').children('DIV').hide();
+			$('#contentLoader').slideUp();
+			ids=this.getAttribute('id');
+			
+			if(animateFlag)
+				{					
+					$('#contentLoader').slideUp(function(){});					
+					animateFlag=false;
+				}else if(ids!='')
+				{							
+					$('#contentLoader').slideUp(function(){
+					},function(){
+						$('#contentLoader').slideDown(function(){
+						},function(){
+							$('#contentLoader').children('#'+ids).slideDown();	
+						});
+					});							
+					
+																			
+				}else
+				{				
+					
+					$('#contentLoader').slideDown(function(){});
+					$('#contentLoader').children('#'+ids).slideDown();															
+					animateFlag=true;	
+				}
+				
+			
+	});
+		
+		
+	});
+</script>
+<style type="text/css">
+	
+	#loader
+		{
+			background:url(images/loadssing.gif) no-repeat; 
+			height:48px;
+			width:47px;
+			margin:0px;
+			margin-top:150px;
+			margin-left:50px;
+			position:absolute;
+			z-index:600;
+		}
+	#puzzle{			
+			position:absolute;			
+			z-index:50;
+			margin:23PX;
+			border:1px solid #EAEAEA;
+			margin-top:-205px;
+			}
+	#puzzle IMG { position:absolute; z-index:50}
+	#preview 
+	{
+		height:100px; width:43px;
+		line-height:50px;
+		cursor:pointer;
+	}
+
+</style>
+</head>
+
+<body>
+<div align="center">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td valign="middle" align="center">
+			<table cellpadding="10" cellspacing="0" border="0" width="0" align="center">
+				<tr>
+					<td valign="middle" align="center"><img src="images/logo.png"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="center">
+			<table cellpadding="0" cellspacing="0" border="0" width="0"  id="puzzle_bg">
+				<tr>
+					<td style="width:43px;" valign="top"><div id="preview"></div></td>
+					<td>
+						<div id="puzzle">
+							<img src="images/cute_fantasy.jpg">
+							<img src="images/078kg1z07l.jpg">							
+							<img src="images/gal31abkay.jpg">
+													
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="middle" align="center">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" id="puzzle_footer">
+				<tr>
+					<td valign="middle" align="center">
+					
+					
+			<table cellpadding="0" cellspacing="0" border="0" width="0" id="content-body" >
+				<tr>
+					<td valign="top" align="center">
+						<table cellpadding="0" cellspacing="10" border="0">
+							<tr>
+								<td><div class="main-menu"><ul><li class="btn" id="learn_js">Documentation</li></ul></div></td>
+								<td><div class="main-menu"><ul><li class="btn" id="download">Download</li></ul></div></td>		
+								<td><div class="main-menu"><ul><li class="btn" id="aboutme">About Me</li></ul></div></td>
+							</tr>
+						</table>
+						<table cellpadding="0" cellspacing="10" border="0">
+							<tr>
+								<td valign="top" colspan="3" align="center" >
+								
+								<table cellpadding="0" cellspacing="0" border="0" width="100%">
+									<tr>
+										<td id="contentLoader">
+								
+								
+								
+								
+									<!--start about me-->
+									<div id="aboutme">
+										<table cellpadding="4" cellspacing="1" border="0" width="100%" bgcolor="#F4F4F4">
+											<tr>
+												<td colspan="2" bgcolor="#F4F4F4"><strong>About me</strong></td>
+											</tr>
+											<tr>
+												<td bgcolor="#FFFFFF"><img src="images/me.jpg"></td><td valign="middle" align="left" bgcolor="#FFFFFF">First of all welcome to my website. It’s a great pleasure for me to acknowledge all those who have contributed in my career. This website not only introduces me but whatever things within my mind I pointed all of them.</td>
+											</tr>
+											<tr>
+												<td colspan="2" bgcolor="#FFFFFF">
+												<ul>
+												
+													<li>	Industry: Information Technology. </li>
+													<li>	Occupation: Software Engineer (Microsoft Technologies (.NET)). </li>
+													<li>	Location: Mohammadpur: Dhaka: Bangladesh. </li>
+												</ul>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" bgcolor="#FFFFFF">
+													<p><b>About Me</b></p>
+													Md. Rakibul Alam is working currently at Grameen Solutions Limited(GSL) as a Software Engineer. 
+													Personally I am getting more inspiration to do work from <a href="http://facebook.com/masudiiuc">Md. Mahabubul Hasan Masud</a>.
+ 													(Currently Work as Sr. Software Engineer at CubeShape Limited) and another is my lazy friends <a href="http://facebook.com/asifo2">Md. Asif Omar</a>(Currently Work as Software Engineer at Cloud Computing).
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" bgcolor="#FFFFFF">
+													<p><b>Personal Skills</b></p>
+													<ul>
+													<li>Working Areas: C#, ASP.NET 4.0, PHP, Flash, Action Script 2.0, Jquery, CodeIgniter, CakePHP etc. </li>
+													<li>Database Platform: MsSql 2005, MsSql 2008, MySql etc. </li>
+													<li>Designing: Adobe, Macromedia.</li>
+													</ul>
+
+												</td>
+											</tr>										
+											<tr>
+												<td colspan="2" bgcolor="#FFFFFF">
+													<p><b>Connect with me </b></p>
+													<ul>
+														<li><a href="http://facebook.com/rakibula" target="_blank">Facebook</a></li>
+														<li>Twitter</li>
+														<li>Email: rakibulalambd@gmail.com</li>																										
+														<li>Phn: +88-01722488810</li>
+													</ul>
+
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--end about me-->								
+									<!--start Download-->
+									<div id="download">
+										<table cellpadding="4" cellspacing="1" border="0" bgcolor="#EFEFEF" width="100%">
+											<tr> 
+												<td valign="middle" align="center" bgcolor="#FFFFFF">Version</td><td bgcolor="#FFFFFF" align="center" valign="middle"> Download Mirror</td>
+											</tr>
+											<tr>
+												<td valign="middle" align="center" bgcolor="#FFFFFF"> v-1.0.11</td>
+												<td valign="middle" align="center" bgcolor="#FFFFFF">Boxing.com</td>
+											</tr>
+										</table>
+									</div>
+									<!--end Download-->
+									<div id="learn_js">
+										<table cellpadding="4" cellspacing="1" bgcolor="#F4F4F4" border="0" width="100%">										
+											<tr>
+												<td align="left"><strong> JS </strong></td>
+											</tr>
+											<tr>
+												<td align="left" bgcolor="#FFFFFF" id="js">
+													
+														<h1>$(document).ready(function(){<br/></h1>
+															<h1>&nbsp;&nbsp;&nbsp;&nbsp;$('#puzzle').JsPuzzle({<br/></h1>
+																<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__rows:4,<br/></h1>
+																<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__columns:4,<br/></h1>
+															<h1>&nbsp;&nbsp;&nbsp;&nbsp;});<br/></h1>
+														<h1>)};<br/></h1>
+													
+												</td>
+											</tr>
+											<tr>
+												<td align="left"><strong>CSS</strong></td>
+											</tr>
+											<tr>
+												<td bgcolor="#FFFFFF" align="left" id="css">
+														
+														<h1>#loader<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;{<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:url(images/loadssing.gif) no-repeat; <br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:48px;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:47px;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin:0px;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-top:150px;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-left:50px;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;}<br/></h1>
+														<h1>#puzzle{	<br/></h1>		
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:absolute;<br/></h1>			
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z-index:50;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin:23PX;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border:1px solid #EAEAEA;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-top:-205px;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;}<br/></h1>
+														<h1>#puzzle IMG { position:absolute; z-index:50}<br/></h1>
+														<h1>#preview <br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:100px; width:43px;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line-height:50px;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cursor:pointer;<br/></h1>
+														<h1>&nbsp;&nbsp;&nbsp;&nbsp;}<br/></h1>
+												</td>
+											</tr>
+											<tr>
+												<td align="left"><strong>Html</strong></td>
+											</tr>
+											<tr>
+												<td bgcolor="#FFFFFF" align="left" id="Html">
+													<h1>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="puzzle"&gt;<br/></h1>												
+													<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="images/078kg1z07l.jpg"&gt;<br/></h1>
+													<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="images/cute_fantasy.jpg"&gt;<br/></h1>
+													<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="images/gal31abkay.jpg"&gt;<br/></h1>													
+													<h1>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/></h1>
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+									
+									
+								
+										</td>
+									</tr>
+								</table>
+								
+								
+								
+								
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="center">
+						<table cellpadding="0" cellspacing="0" border="0" width="0" align="center">
+							
+							<tr>
+								<td class="all-rights">All Rights and Reserved by @cameopix.com</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+					
+					
+					
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
